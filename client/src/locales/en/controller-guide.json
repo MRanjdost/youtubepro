@@ -1,0 +1,31 @@
+{
+  "trigger": {
+    "ariaLabel": "Open controller guide",
+    "title": "Controller guide"
+  },
+  "title": "YouTube Pro controller note",
+  "description": "Use the sidebar labels below to navigate the workspace.",
+  "items": {
+    "research": {
+      "label": "Research",
+      "description": "Search YouTube, compare public video data, generate grounded AI insights, and choose an idea."
+    },
+    "script": {
+      "label": "Script Writer",
+      "description": "Turn an idea into a script, then read it in the built-in teleprompter with play, speed, and text-size controls."
+    },
+    "thumbnail": {
+      "label": "Thumbnail Creator",
+      "description": "Create a thumbnail from one visual brief, an optional preset, and permitted reference images."
+    },
+    "settings": {
+      "label": "Settings",
+      "description": "Connect local API keys and choose the Gemini text and image models."
+    },
+    "newWorkflow": {
+      "label": "New Workflow",
+      "description": "Clear the current session after confirmation and begin again from Research."
+    }
+  },
+  "recommendedOrder": "Recommended order: Research, Script Writer, then Thumbnail Creator."
+}

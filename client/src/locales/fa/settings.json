@@ -1,0 +1,70 @@
+{
+  "title": "تنظیمات",
+  "subtitle": "مدیریت کلیدهای API، ارائه‌دهندگان هوش مصنوعی و پیکربندی شبکه.",
+  "headerBadge": "اتصالات محلی",
+  "storedLocally": "ذخیره‌سازی محلی",
+  "warning": "کلیدهای API به صورت محلی در فایل .env ذخیره می‌شوند و هرگز به سروری غیر از ارائه‌دهنده مربوطه ارسال نخواهند شد.",
+  "fields": {
+    "customImageProviderPollinations": "Pollinations (رایگان، بدون کلید)"
+  },
+  "sections": {
+    "gemini": {
+      "title": "پیکربندی گوگل و Gemini",
+      "description": "برای جستجوی یوتیوب و قابلیت‌های هوش مصنوعی پیش‌فرض Gemini الزامی است.",
+      "youtubeKey": "کلید API دیتای یوتیوب (YouTube API Key)",
+      "youtubeKeyPlaceholder": "کلید یوتیوب را وارد کنید",
+      "geminiKey": "کلید API جمینای (Gemini API Key)",
+      "geminiKeyPlaceholder": "کلید Gemini را وارد کنید",
+      "configured": "پیکربندی شده (برای حفظ مقدار قبلی خالی بگذارید)",
+      "notConfigured": "پیکربندی نشده",
+      "textModel": "مدل متنی پیش‌فرض Gemini",
+      "imageModel": "مدل تصویری پیش‌فرض Gemini",
+      "openCloud": "مشاهده دسترسی‌های Google Cloud",
+      "openStudio": "مشاهده دسترسی‌های Google AI Studio"
+    },
+    "customText": {
+      "title": "ارائه‌دهنده سفارشی هوش مصنوعی متنی",
+      "description": "تنظیم سرور سازگار با OpenAI یا OpenRouter برای تولید فیلم‌نامه، ایده و تحلیل تحقیقاتی.",
+      "provider": "ارائه‌دهنده",
+      "baseUrl": "آدرس پایه (Base URL)",
+      "apiKeyPlaceholder": "کلید ارائه‌دهنده را وارد کنید",
+      "model": "شناسه مدل (Model ID)",
+      "modelPlaceholder": "مثال: anthropic/claude-3.5-sonnet",
+      "resetButton": "بازنشانی هوش مصنوعی متنی به Gemini",
+      "chooseProvider": "انتخاب ارائه‌دهنده",
+      "overrideHint": "ارائه‌دهنده سفارشی جایگزین Gemini برای تولید متن می‌شود.",
+      "geminiHint": "استفاده از Gemini پیش‌فرض برای تولید متن."
+    },
+    "customImage": {
+      "title": "ارائه‌دهنده سفارشی هوش مصنوعی تصویری",
+      "heading": "هوش مصنوعی تصویری",
+      "subheading": "مورد استفاده برای تولید تصویر شاخص (Thumbnail).",
+      "pollinationsHint": "تولید رایگان تصویر با Pollinations — نیازی به کلید API ندارد."
+    },
+    "proxy": {
+      "title": "شبکه و پروکسی خروجی",
+      "description": "هدایت درخواست‌های سرور (جستجوی یوتیوب، هوش مصنوعی) از طریق پروکسی HTTP/HTTPS.",
+      "active": "فعال",
+      "direct": "اتصال مستقیم",
+      "url": "آدرس پروکسی",
+      "saveButton": "ذخیره پروکسی",
+      "resetButton": "بازنشانی به اتصال مستقیم"
+    }
+  },
+  "messages": {
+    "saveSuccess": "تنظیمات با موفقیت ذخیره شد.",
+    "saveError": "خطا در ذخیره تنظیمات.",
+    "noChanges": "تغییری برای ذخیره وجود ندارد.",
+    "noChangesHint": "برای ذخیره، یک کلید، تنظیم ارائه‌دهنده یا مدل جدید وارد کنید.",
+    "proxySaved": "تنظیمات پروکسی ذخیره شد",
+    "proxySavedHint": "درخواست‌ها از طریق پروکسی ارسال می‌شوند.",
+    "proxyReset": "اتصال مستقیم بازیابی شد",
+    "proxyResetHint": "پروکسی غیرفعال شد؛ درخواست‌ها مستقیماً ارسال می‌شوند.",
+    "proxyResetError": "خطا در بازنشانی پروکسی",
+    "settingsUnavailable": "تنظیمات در دسترس نیست",
+    "geminiModelCatalog": "مشاهده کاتالوگ مدل‌های رسمی Gemini",
+    "saveAndApply": "ذخیره و اعمال",
+    "loading": "در حال بارگذاری وضعیت اتصال",
+    "chooseModel": "یک مدل انتخاب کنید"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "title": "سازنده تصویر بند",
+  "subtitle": "توضیح تصویر بند را بدهید. سازنده وعده تحقیق انتخاب‌شده و قوانین خوانایی یوتیوب را اعمال می‌کند.",
+  "form": {
+    "topicLabel": "موضوع یا عنوان ویدیو",
+    "topicPlaceholder": "موضوع ویدیو چیست؟",
+    "presetLabel": "نقطه شروع",
+    "presetCustom": "استفاده از خلاصه من",
+    "mainTextLabel": "کلمات روی تصویر بند",
+    "mainTextPlaceholder": "اختیاری، ۲ تا ۵ کلمه",
+    "descriptionLabel": "تصویر بند مورد نظرتان را توصیف کنید",
+    "descriptionPlaceholder": "مثلاً: نمای نزدیک از یک سازنده که در مقابل یک داشبورد تحلیل تمیز شگفت‌زده شده، تضاد بالا، موضوع در سمت راست، فضای کوتاه در سمت چپ.",
+    "descriptionHint": "موضوع، عمل، محیط، و نتیجه صادقانه",
+    "referencesTitle": "تصاویر مرجع",
+    "referencesDescription": "اختیاری، حداکثر سه تصویر PNG یا JPEG مجاز.",
+    "dragImages": "تصاویر را اینجا رها کنید",
+    "chooseFiles": "یا فایل‌ها را انتخاب کنید",
+    "preparingImages": "در حال آماده‌سازی تصاویر",
+    "rightsLabel": "مجوز استفاده از هر تصویر مرجع آپلودشده را دارم.",
+    "advancedTrigger": "کنترل‌های پیشرفته",
+    "subTextLabel": "متن ثانویه",
+    "subTextPlaceholder": "خط پشتیبان اختیاری",
+    "autoBlendLabel": "ترکیب مراجع در یک صحنه",
+    "autoBlendDescription": "خاموش یعنی فقط به عنوان جهت استفاده شود.",
+    "variationPlaceholder": "در نسخه بعدی چه چیزی باید تغییر کند؟",
+    "variationTrigger": "ساخت تغییرات",
+    "variationGenerate": "تولید تغییرات",
+    "topicDescription": "موضوع ویدیوی شما چیست؟ بگذارید هوش مصنوعی مفهوم بصری آن را طراحی کند.",
+    "providerLabel": "سازنده تصویر",
+    "providerConfigured": "مدل سرور (از تنظیمات)",
+    "providerPuter": "Puter (تصویر رایگان هوش مصنوعی)",
+    "providerPollinations": "Pollinations (رایگان، بدون کلید)"
+  },
+  "modelStatus": {
+    "checkButton": "بررسی مدل تصویر",
+    "loadingAria": "در حال بارگذاری مدل تصویر تنظیم‌شده"
+  },
+  "puter": {
+    "fallbackToPollinations": "Puter در دسترس نیست. در حال تولید با Pollinations...",
+    "generationFailed": "Puter نتوانست تصویر را تولید کند",
+    "generationFailedSuggestion": "تولید رایگان تصویر با Puter ناموفق بود:"
+  },
+  "pollinations": {
+    "generationFailed": "Pollinations نتوانست تصویر را تولید کند",
+    "generationFailedSuggestion": "تولید رایگان تصویر ناموفق بود:",
+    "unreachable": "Pollinations از شبکه شما قابل دسترسی نیست",
+    "unreachableSuggestion": "مرورگر شما نمی‌تواند به image.pollinations.ai متصل شود. این ممکن است به دلیل محدودیت‌های شبکه باشد. به جای آن، «مدل سرور (از تنظیمات)» را به عنوان سازنده تصویر انتخاب کنید.",
+    "timeout": "درخواست Pollinations زمان‌بر شد",
+    "timeoutSuggestion": "سرویس رایگان تصویر بیش از حد انتظار طول کشید. دوباره تلاش کنید یا به مدل سرور تغییر دهید."
+  },
+  "contextBanner": {
+    "loaded": "ایده تحقیق بارگذاری شد",
+    "promise": "وعده:"
+  },
+  "formCard": {
+    "title": "ساخت تصویر بند",
+    "description": "با یک وعده واضح و یک ایده بصری شروع کنید. مراجع و کنترل‌های دقیق اختیاری هستند."
+  },
+  "preview": {
+    "title": "پیش‌نمایش",
+    "loading": "در حال تولید یک تصویر ۱۶:۹ با مدل تنظیم‌شده. ممکن است لحظه‌ای طول بکشد.",
+    "alt": "تصویر بند یوتیوب تولیدشده",
+    "download": "دانلود",
+    "newVersion": "نسخه جدید",
+    "downloaded": "دانلود به‌عنوان",
+    "generatedWith": "تولیدشده با",
+    "defaultModel": "مدل تصویر تنظیم‌شده",
+    "empty": {
+      "title": "تصویر بند شما در اینجا ظاهر می‌شود",
+      "description": "یک موضوع و یک خلاصه بصری کوتاه اضافه کنید، سپس ایجاد کنید."
+    }
+  },
+  "actions": {
+    "createThumbnail": "ساخت تصویر بند",
+    "creatingThumbnail": "در حال ساخت تصویر بند"
+  },
+  "advanced": {
+    "visualStyle": "سبک بصری",
+    "composition": "ترکیب‌بندی",
+    "cameraAngle": "زاویه دوربین",
+    "lighting": "نورپردازی",
+    "colorScheme": "طرح رنگ",
+    "textPosition": "موقعیت متن"
+  },
+  "reference": {
+    "imageAlt": "مرجع {{number}}: {{name}}",
+    "roleAria": "نقش مرجع {{number}}",
+    "removeAria": "حذف مرجع {{number}}: {{name}}"
+  },
+  "presets": {
+    "tutorial": "آموزشی یا نمایش",
+    "comparison": "مقایسه یا در برابر",
+    "result": "افشای نتیجه",
+    "case-study": "مطالعه موردی",
+    "news": "خبر یا به‌روزرسانی",
+    "list": "لیست یا رتبه‌بندی",
+    "review": "بررسی محصول یا ابزار"
+  },
+  "options": {
+    "bold_dramatic": "پررنگ و دراماتیک",
+    "clean_minimal": "تمیز و مینیمال",
+    "gaming": "گیمینگ",
+    "vlog_lifestyle": "ولاگ و سبک زندگی",
+    "educational": "آموزشی",
+    "cinematic": "سینمایی",
+    "tech_modern": "تکنولوژی و مدرن",
+    "lifestyle_wellness": "سبک زندگی و تندرستی",
+    "centered": "مرکزگرا",
+    "rule_of_thirds": "قانون سه‌سوم",
+    "close_up": "نمای نزدیک",
+    "wide_shot": "نمای گسترده",
+    "split_screen": "تقسیم صفحه",
+    "diagonal": "قطری",
+    "eye_level": "سطح چشم",
+    "low_angle": "زاویه پایین",
+    "high_angle": "زاویه بالا",
+    "dutch_angle": "زاویه هلندی",
+    "overhead": "از بالا",
+    "three_quarter": "سه‌چهارم",
+    "natural": "طبیعی",
+    "dramatic": "دراماتیک",
+    "golden_hour": "ساعت طلایی",
+    "studio": "استودیویی",
+    "neon_rgb": "نئون و RGB",
+    "backlit": "از پشت روشن",
+    "soft_diffused": "نرم و پراکنده",
+    "vibrant": "زنده",
+    "muted_elegant": "کم‌رنگ و ظریف",
+    "warm": "تن گرم",
+    "cool": "تن سرد",
+    "monochrome": "تک‌رنگ",
+    "complementary": "مکمل",
+    "brand_colors": "رنگ‌های برند",
+    "left": "چپ",
+    "right": "راست",
+    "center": "مرکز",
+    "top": "بالا",
+    "bottom": "پایین",
+    "no_text_space": "بدون فضای متن",
+    "subject_person": "موضوع یا شخص",
+    "style_direction": "جهت سبک",
+    "background": "پس‌زمینه",
+    "composition": "ترکیب‌بندی"
+  },
+  "styleOptions": {
+    "bold": "پررنگ و درامatic",
+    "minimal": "تمیز و حداقل",
+    "gaming": "گیمینگ",
+    "vlog": "وlog و سبک زندگی",
+    "tutorial": "آموزشی",
+    "cinematic": "سینمایی",
+    "tech": "تکنولوژی و مدرن",
+    "lifestyle": "سبک زندگی و تندرستی"
+  },
+  "compositionOptions": {
+    "centered": "مرکزگرا",
+    "rule-of-thirds": "قانون سه‌سوم",
+    "close-up": "نمای نزدیک",
+    "wide-shot": "نمای گسترده",
+    "split-screen": "تقسیم صفحه",
+    "diagonal": "قطری"
+  },
+  "cameraAngleOptions": {
+    "eye-level": "سطح چشم",
+    "low-angle": "زاویه پایین",
+    "high-angle": "زاویه بالا",
+    "dutch-angle": "زاویه هلندی",
+    "overhead": "از بالا",
+    "three-quarter": "سه‌چهارم"
+  },
+  "lightingOptions": {
+    "natural": "طبیعی",
+    "dramatic": "درامatic",
+    "golden-hour": "ساعت طلایی",
+    "studio": "استودیویی",
+    "neon": "نئون و RGB",
+    "backlit": "از پشت روشن",
+    "soft": "نرم و پراکنده"
+  },
+  "colorSchemeOptions": {
+    "vibrant": "زنده",
+    "muted": "کم‌رنگ و لوکس",
+    "warm": "تن گرم",
+    "cool": "تن سرد",
+    "monochrome": "تک‌رنگ",
+    "complementary": "مکمل",
+    "brand-colors": "رنگ‌های برند"
+  },
+  "textPositionOptions": {
+    "left": "چپ",
+    "right": "راست",
+    "center": "مرکز",
+    "top": "بالا",
+    "bottom": "پایین",
+    "none": "بدون فضای متن"
+  },
+  "imageRoleOptions": {
+    "subject": "موضوع یا شخص",
+    "style": "جهت سبک",
+    "background": "پس‌زمینه",
+    "composition": "ترکیب‌بندی"
+  },
+  "errors": {
+    "retry": "تلاش مجدد",
+    "retryWithPuter": "تلاش مجدد با Pollinations (رایگان / بدون کلید)",
+    "openSettings": "باز کردن تنظیمات"
+  }
+}

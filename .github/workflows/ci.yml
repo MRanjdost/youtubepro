@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.0
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # WHY: The four gates run in order of increasing cost and decreasing
+      # diagnostic clarity. Typecheck fails fastest and points at the exact
+      # file, so it runs before the 570-test suite spends ~11s re-reporting
+      # errors that tsc already named. verify-i18n is a single deterministic
+      # pass, and build is last because it is the slowest and produces no
+      # diagnostic a failing gate above it has not already produced.
+      # WHY: The suite is fully mocked and never calls YouTube or Gemini, so it
+      # is safe and free to run in CI with no provider credentials.
+
+      - name: Gate 1 of 4 - TypeScript check
+        run: npm run check
+
+      - name: Gate 2 of 4 - Verify locale key coverage
+        run: npm run verify-i18n
+
+      - name: Gate 3 of 4 - Run test suite
+        run: npm test
+
+      - name: Gate 4 of 4 - Build production bundle
+        run: npm run build

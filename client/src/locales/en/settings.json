@@ -1,0 +1,70 @@
+{
+  "title": "Settings",
+  "subtitle": "Manage your API keys, AI model providers, and network configuration.",
+  "headerBadge": "Local connections",
+  "storedLocally": "Stored locally",
+  "warning": "API keys are stored locally on your machine in the .env file. They are never sent to external servers other than the respective API providers.",
+  "fields": {
+    "customImageProviderPollinations": "Pollinations (Free, No Key)"
+  },
+  "sections": {
+    "gemini": {
+      "title": "Google & Gemini API Configuration",
+      "description": "Required for YouTube search and baseline Gemini AI capabilities.",
+      "youtubeKey": "YouTube Data API Key",
+      "youtubeKeyPlaceholder": "Enter YouTube API key",
+      "geminiKey": "Gemini API Key",
+      "geminiKeyPlaceholder": "Enter Gemini API key",
+      "configured": "Configured (leave empty to keep current)",
+      "notConfigured": "Not configured",
+      "textModel": "Default Gemini Text Model",
+      "imageModel": "Default Gemini Image Model",
+      "openCloud": "Open Google Cloud credentials",
+      "openStudio": "Open Google AI Studio"
+    },
+    "customText": {
+      "title": "Custom Text AI Provider",
+      "description": "Configure an OpenAI-compatible endpoint or OpenRouter for script writing, idea generation, and research insights.",
+      "provider": "Provider",
+      "baseUrl": "Base URL",
+      "apiKeyPlaceholder": "Enter custom provider API key",
+      "model": "Model ID",
+      "modelPlaceholder": "e.g. anthropic/claude-3.5-sonnet",
+      "resetButton": "Reset Text AI to Gemini",
+      "chooseProvider": "Choose a provider",
+      "overrideHint": "Custom provider overrides Gemini for text generation.",
+      "geminiHint": "Use Gemini for text generation."
+    },
+    "customImage": {
+      "title": "Custom Image AI Provider",
+      "heading": "AI image",
+      "subheading": "Used for thumbnail generation.",
+      "pollinationsHint": "Free image generation via Pollinations — no API key needed."
+    },
+    "proxy": {
+      "title": "Network & Outbound Proxy",
+      "description": "Route server requests (YouTube search, AI APIs) through an HTTP/HTTPS proxy.",
+      "active": "Active",
+      "direct": "Direct Connection",
+      "url": "Proxy URL",
+      "saveButton": "Save Proxy",
+      "resetButton": "Reset to Direct"
+    }
+  },
+  "messages": {
+    "saveSuccess": "Settings saved successfully.",
+    "saveError": "Failed to save settings.",
+    "noChanges": "No changes to save.",
+    "noChangesHint": "Enter a replacement key, change a provider setting, or choose a different model.",
+    "proxySaved": "Proxy settings saved",
+    "proxySavedHint": "Requests routed through proxy.",
+    "proxyReset": "Direct connection restored",
+    "proxyResetHint": "Proxy disabled; requests go directly.",
+    "proxyResetError": "Could not reset proxy",
+    "settingsUnavailable": "Settings unavailable",
+    "geminiModelCatalog": "Review the official Gemini model catalog",
+    "saveAndApply": "Save and apply",
+    "loading": "Loading connection status",
+    "chooseModel": "Choose a model"
+  }
+}

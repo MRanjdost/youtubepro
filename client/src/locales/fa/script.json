@@ -1,0 +1,233 @@
+{
+  "title": "نویسنده فیلم‌نامه",
+  "subtitle": "تولید فیلم‌نامه با هوش مصنوعی",
+  "selectedIdea": {
+    "heading": "ایده انتخاب‌شده",
+    "promise": "وعده:",
+    "surface": "سطح سطح:",
+    "payoff": "بازدهی:",
+    "thumbnail": "تصویر بند:",
+    "studioCheck": "بررسی استودیو:",
+    "experiment": "آزمایش:"
+  },
+  "form": {
+    "stepBadge": "مرحله ۲ از ۳",
+    "topicLabel": "موضوع ویدیو",
+    "topicPlaceholder": "مثلاً: چگونه یک اپلیکیشن React از صفر بسازیم",
+    "topicDescription": "ویدیو شما درباره چه چیزی است؟",
+    "formatLabel": "قالب ویدیو",
+    "formatPlaceholder": "انتخاب قالب ویدیو",
+    "formatDescription": "نوع ویدیویی که می‌سازید را انتخاب کنید",
+    "audienceLabel": "مخاطب هدف",
+    "audiencePlaceholder": "انتخاب مخاطب هدف",
+    "audienceDescription": "این ویدیو را برای چه کسانی می‌سازید؟",
+    "personaLabel": "ویژگی‌های لحن",
+    "personaPlaceholder": "انتخاب سبک لحن",
+    "personaDescription": "ویژگی‌های لحن کلی را انتخاب کنید. فیلم‌نامه صدای فرد خاصی را تقلید نخواهد کرد.",
+    "customPersonaLabel": "لحن سفارشی",
+    "customPersonaDescription": "سرعت، انرژی و میزان رسمی بودن را بدون نام بردن از شخص خاصی توصیف کنید.",
+    "notesLabel": "یادداشت‌های تکمیلی (اختیاری)",
+    "notesPlaceholder": "نکات خاص، ترجیحات سبک یا نیازمندی‌ها...",
+    "formats": {
+      "short": {
+        "label": "ویدیو کوتاه / Shorts (زیر ۶۰ ثانیه)",
+        "desc": "سریع و جذاب برای ویدیوهای عمودی"
+      },
+      "long": {
+        "label": "ویدیو بلند (۸ تا ۱۵ دقیقه)",
+        "desc": "محتوای عمیق و ساختاریافته"
+      },
+      "tutorial": {
+        "label": "آموزشی / راهنما",
+        "desc": "آموزش گام‌به‌گام و کاربردی"
+      },
+      "review": {
+        "label": "بررسی محصول",
+        "desc": "تحلیل متعادل و تخصصی"
+      },
+      "vlog": {
+        "label": "سبک ولاگ",
+        "desc": "روایت فردی و جذاب"
+      }
+    },
+    "audiences": {
+      "general": {
+        "label": "مخاطبان عمومی",
+        "desc": "بیان ساده و عامه‌پسند"
+      },
+      "tech": {
+        "label": "علاقه‌مندان به تکنولوژی",
+        "desc": "اصطلاحات فنی و عمیق‌تر"
+      },
+      "beginners": {
+        "label": "مبتدی‌ها",
+        "desc": "توضیحات ساده بدون کلمات پیچیده"
+      },
+      "professionals": {
+        "label": "متخصصان صنعت",
+        "desc": "تحلیل‌های آماری و سطح بالا"
+      }
+    },
+    "personas": {
+      "none": {
+        "label": "بدون سبک خاص",
+        "desc": "سبک استاندارد و پیش‌فرض هوش مصنوعی"
+      },
+      "curious": {
+        "label": "متفکر کنجکاو",
+        "desc": "تفکربرانگیز، همراه با تمثیل"
+      },
+      "energizer": {
+        "label": "پرانرژی و پویا",
+        "desc": "انگیزشی و عمل‌گرا"
+      },
+      "expert": {
+        "label": "متخصص داده",
+        "desc": "مبتنی بر آمار و نکات سئو"
+      },
+      "hustler": {
+        "label": "پرتلاش و پرحرارت",
+        "desc": "انرژی بالا و انگیزه موفقیت"
+      },
+      "entertainer": {
+        "label": "سرگرم‌کننده",
+        "desc": "شاد، جذاب و ترند محور"
+      },
+      "philosopher": {
+        "label": "فیلسوف و ژرف‌اندیش",
+        "desc": "خردمندانه، عمیق و آرام"
+      },
+      "challenger": {
+        "label": "چالش‌گر",
+        "desc": "هیجان‌انگیز و تعاملی"
+      },
+      "storyteller": {
+        "label": "راوی داستان",
+        "desc": "آرام، معتبر و داستان‌محور"
+      },
+      "business": {
+        "label": "حرفه‌ای کسب‌وکار",
+        "desc": "ارزش‌محور، متمرکز و مستقیم"
+      },
+      "motivator": {
+        "label": "انگیزش‌بخش",
+        "desc": "امیدبخش و مثبت‌نگر"
+      },
+      "custom": {
+        "label": "پرسونای سفارشی",
+        "desc": "ویژگی‌های مد نظر خود را بنویسید"
+      }
+    },
+    "generate": "تولید فیلم‌نامه",
+    "generating": "در حال تولید...",
+    "resetAria": "فرم فیلم‌نامه را ریست کنید",
+    "topic": "موضوع"
+  },
+  "formatOptions": {},
+  "audienceOptions": {},
+  "personaOptions": {},
+  "error": {
+    "retry": "تلاش مجدد",
+    "dismissAria": "خطای فیلم‌نامه را نادیده بگیرید"
+  },
+  "loading": {
+    "title": "در حال تولید فیلم‌نامه شما...",
+    "subtitle": "ممکن است چند ثانیه طول بکشد"
+  },
+  "ready": {
+    "eyebrow": "آماده خواندن",
+    "heading": "تلپرامپتر",
+    "spaceHint": "فشار دهید فضا برای پخش یا توقف"
+  },
+  "metadata": {},
+  "teleprompter": {
+    "play": "پخش",
+    "pause": "توقف",
+    "restartAria": "تلپرامپتر را ریست کنید",
+    "speedAria": "سرعت خواندن",
+    "speed100": "۱۰۰ کلمه در دقیقه",
+    "speed125": "۱۲۵ کلمه در دقیقه",
+    "speed150": "۱۵۰ کلمه در دقیقه",
+    "speed175": "۱۷۵ کلمه در دقیقه",
+    "speed200": "۲۰۰ کلمه در دقیقه",
+    "decreaseAria": "کاهش اندازه متن",
+    "increaseAria": "افزایش اندازه متن",
+    "undoAria": "ویرایش ذخیره‌شده فیلم‌نامه را واپس",
+    "undoTitle": "ویرایش ذخیره شده را لغو کنید",
+    "redoAria": "ویرایش ذخیره‌شده فیلم‌نامه را مجدد",
+    "redoTitle": "دوباره انجام دهید",
+    "hideCuesAria": "پنهان کردن نشانگرهای تولید",
+    "showCuesAria": "نمایش نشانگرهای تولید",
+    "hideCuesTitle": "پنهان کردن نشانگرها",
+    "showCuesTitle": "نمایش نشانگرها",
+    "exitFullscreenAria": "خروج از تلپرامپتر تمام‌صفحه",
+    "enterFullscreenAria": "باز کردن تلپرامپتر تمام‌صفحه",
+    "exitFullscreenTitle": "خروج از تمام‌صفحه",
+    "enterFullscreenTitle": "تمام‌صفحه",
+    "edit": "ویرایش",
+    "editFullAria": "ویرایش فیلم‌نامه کامل",
+    "backWithoutSaving": "بازگشت بدون ذخیره",
+    "saveScript": "ذخیره فیلم‌نامه",
+    "saveHint": "Ctrl+Z تایپ را واپس می‌برد. Ctrl+Shift+Z مجدد انجام می‌دهد.",
+    "viewportAria": "فیلم‌نامه تلپرامپتر. فشار دهید فضا برای پخش یا توقف.",
+    "noContent": "محتوای قابل خواندن فیلم‌نامه یافت نشد."
+  },
+  "paragraph": {},
+  "section": {},
+  "details": {
+    "heading": "جزئیات فیلم‌نامه و خروجی",
+    "downloadPdf": "دانلود PDF",
+    "copyScript": "کپی فیلم‌نامه کامل",
+    "copied": "کپی شد",
+    "createThumbnail": "ساخت تصویر بند",
+    "suggestedTitles": "عناوین پیشنهادی",
+    "regenerateTitlesAria": "بازتولید عناوین پیشنهادی",
+    "plan": "برنامه",
+    "hook": "گیره:",
+    "payoff": "بازدهی",
+    "cta": "فراخوان اصلی",
+    "studioCheck": "بررسی استودیو"
+  },
+  "emptyState": {
+    "title": "فیلم‌نامه خود را بسازید",
+    "description": "جزئیات را در پنل سمت چپ پر کنید و هوش مصنوعی یک فیلم‌نامه حرفه‌ای برای ویدیوی شما تولید کند."
+  },
+  "errors": {
+    "quota": "استفاده از جیمنی موقتاً محدود است. منتظر بمانید تا پنجره ارائه‌دهنده ریست شود، سپس تلاش کنید.",
+    "generationFailed": "تولید فیلم‌نامه شکست خورد",
+    "titleRegenerationFailed": "بازتولید عناوین شکست خورد",
+    "sectionRegenerationFailed": "امکان بازتولید {{section}} وجود ندارد",
+    "paragraphRewriteFailed": "امکان بازنویسی پاراگراف وجود ندارد"
+  },
+  "toasts": {
+    "ideaLoaded": {
+      "title": "ایده بارگذاری شد",
+      "description": "\"{{title}}\" با تحقیقات بارگذاری شد. آماده تولید فیلم‌نامه شما!"
+    },
+    "scriptGenerated": {
+      "title": "فیلم‌نامه تولید شد",
+      "description": "فیلم‌نامه {{format}} شما آماده است!"
+    },
+    "titlesRegenerated": {
+      "title": "عناوین بازتولید شدند",
+      "description": "پیشنهادات عنوان جدید آماده است!"
+    },
+    "paragraphUpdated": {},
+    "sectionRegenerated": {
+      "title": "بخش بازتولید شد",
+      "description": "بخش {{section}} بروزرسانی شد!"
+    },
+    "paragraphRewritten": {
+      "title": "پاراگراف بازنویسی شد",
+      "description": "پاراگراف بروزرسانی شد!"
+    },
+    "copied": {
+      "title": "در کپی خوانده شد",
+      "description": "فیلم‌نامه در برد سنجه شما کپی شد."
+    },
+    "pdfDownloaded": {
+      "title": "PDF دانلود شد",
+      "description": "فیلم‌نامه شما به عنوان PDF ذخیره شد."
+    }
+  }
+}

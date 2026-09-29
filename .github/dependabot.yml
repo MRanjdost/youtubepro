@@ -1,0 +1,57 @@
+version: 2
+updates:
+  # WHY: The production bundle ships whatever versions package-lock.json pins.
+  # Weekly npm updates catch patches and minors; the allowlist below keeps
+  # intentional major bumps (Vite 8, Express 5, React 18) manual so a Dependabot
+  # PR can never silently force a breaking major upgrade through CI.
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - dependencies
+      - npm
+    groups:
+      # WHY: Group patch and minor bumps so a routine week produces one reviewable
+      # PR instead of a dozen. Major upgrades stay ungrouped and visible.
+      npm-patch-minor:
+        applies-to: version-updates
+        update-types:
+          - "patch"
+          - "minor"
+    ignore:
+      - dependency-name: "vite"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "express"
+        update-types: ["version-update:semver-major"]
+
+  # WHY: The CI workflow pins actions/checkout@v4 and actions/setup-node@v4.
+  # Tracking that ecosystem keeps the runner supply chain current; a moving tag
+  # is only trustworthy while Dependabot watches it.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Etc/UTC"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(ci)"
+    labels:
+      - dependencies
+      - github-actions
+    groups:
+      github-actions:
+        patterns:
+          - "*"

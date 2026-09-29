@@ -1,0 +1,233 @@
+{
+  "title": "Script Writer",
+  "subtitle": "AI-powered script generation",
+  "selectedIdea": {
+    "heading": "Selected Idea",
+    "promise": "Promise:",
+    "surface": "Surface:",
+    "payoff": "Payoff:",
+    "thumbnail": "Thumbnail:",
+    "studioCheck": "Studio check:",
+    "experiment": "Experiment:"
+  },
+  "form": {
+    "stepBadge": "Step 2 of 3",
+    "topicLabel": "Video Topic",
+    "topicPlaceholder": "e.g., How to build a React app from scratch",
+    "topicDescription": "What is your video about?",
+    "formatLabel": "Video Format",
+    "formatPlaceholder": "Select a format",
+    "formatDescription": "Choose the type of video you're creating",
+    "audienceLabel": "Target Audience",
+    "audiencePlaceholder": "Select target audience",
+    "audienceDescription": "Who are you making this video for?",
+    "personaLabel": "Tone Traits",
+    "personaPlaceholder": "Select a persona style",
+    "personaDescription": "Choose abstract delivery traits. The script will not imitate a real person's voice.",
+    "customPersonaLabel": "Custom Tone Traits",
+    "customPersonaDescription": "Describe cadence, energy, vocabulary, and formality without naming a person.",
+    "notesLabel": "Additional Notes (Optional)",
+    "notesPlaceholder": "Any specific points, style preferences, or requirements...",
+    "formats": {
+      "short": {
+        "label": "YouTube Short (< 60 sec)",
+        "desc": "Fast, punchy vertical video"
+      },
+      "long": {
+        "label": "Long-form Video (8-15 min)",
+        "desc": "In-depth, structured content"
+      },
+      "tutorial": {
+        "label": "Tutorial/How-to",
+        "desc": "Step-by-step educational guide"
+      },
+      "review": {
+        "label": "Product Review",
+        "desc": "Balanced, analytical assessment"
+      },
+      "vlog": {
+        "label": "Vlog Style",
+        "desc": "Personal, narrative-driven storytelling"
+      }
+    },
+    "audiences": {
+      "general": {
+        "label": "General Audience",
+        "desc": "Broad appeal, accessible language"
+      },
+      "tech": {
+        "label": "Tech-Savvy Viewers",
+        "desc": "Deeper technical terminology"
+      },
+      "beginners": {
+        "label": "Beginners",
+        "desc": "Simple explanations, no jargon"
+      },
+      "professionals": {
+        "label": "Industry Professionals",
+        "desc": "High-level insights and data"
+      }
+    },
+    "personas": {
+      "none": {
+        "label": "No specific style",
+        "desc": "Default AI writing style"
+      },
+      "curious": {
+        "label": "The Curious Thinker",
+        "desc": "Thought-provoking, uses analogies"
+      },
+      "energizer": {
+        "label": "The Energizer",
+        "desc": "Energetic, motivational, action-oriented"
+      },
+      "expert": {
+        "label": "The Data Expert",
+        "desc": "Data-driven, SEO-focused, practical tips"
+      },
+      "hustler": {
+        "label": "The Hustler",
+        "desc": "High energy, hustle culture, motivational"
+      },
+      "entertainer": {
+        "label": "The Entertainer",
+        "desc": "Fun, pop culture, entertaining"
+      },
+      "philosopher": {
+        "label": "The Philosopher",
+        "desc": "Philosophical, wise, mindful"
+      },
+      "challenger": {
+        "label": "The Challenger",
+        "desc": "Exciting, challenge-driven, high engagement"
+      },
+      "storyteller": {
+        "label": "The Storyteller",
+        "desc": "Calm, authoritative, storytelling voice"
+      },
+      "business": {
+        "label": "The Business Pro",
+        "desc": "Business-focused, value-driven, direct"
+      },
+      "motivator": {
+        "label": "The Motivator",
+        "desc": "Empowering, motivational, high energy"
+      },
+      "custom": {
+        "label": "Custom Persona",
+        "desc": "Enter your own persona traits"
+      }
+    },
+    "generate": "Generate Script",
+    "generating": "Generating...",
+    "resetAria": "Reset script form",
+    "topic": "Topic"
+  },
+  "formatOptions": {},
+  "audienceOptions": {},
+  "personaOptions": {},
+  "error": {
+    "retry": "Retry",
+    "dismissAria": "Dismiss script error"
+  },
+  "loading": {
+    "title": "Generating your script...",
+    "subtitle": "This may take a few seconds"
+  },
+  "ready": {
+    "eyebrow": "Ready to read",
+    "heading": "Teleprompter",
+    "spaceHint": "Press Space to play or pause"
+  },
+  "metadata": {},
+  "teleprompter": {
+    "play": "Play",
+    "pause": "Pause",
+    "restartAria": "Restart teleprompter",
+    "speedAria": "Reading speed",
+    "speed100": "100 wpm",
+    "speed125": "125 wpm",
+    "speed150": "150 wpm",
+    "speed175": "175 wpm",
+    "speed200": "200 wpm",
+    "decreaseAria": "Decrease text size",
+    "increaseAria": "Increase text size",
+    "undoAria": "Undo saved script edit",
+    "undoTitle": "Undo saved edit",
+    "redoAria": "Redo saved script edit",
+    "redoTitle": "Redo saved edit",
+    "hideCuesAria": "Hide production cues",
+    "showCuesAria": "Show production cues",
+    "hideCuesTitle": "Hide cues",
+    "showCuesTitle": "Show cues",
+    "exitFullscreenAria": "Exit fullscreen teleprompter",
+    "enterFullscreenAria": "Open fullscreen teleprompter",
+    "exitFullscreenTitle": "Exit fullscreen",
+    "enterFullscreenTitle": "Fullscreen",
+    "edit": "Edit",
+    "editFullAria": "Edit full script",
+    "backWithoutSaving": "Back without saving",
+    "saveScript": "Save script",
+    "saveHint": "Ctrl+Z undoes typing. Ctrl+Shift+Z redoes it.",
+    "viewportAria": "Teleprompter script. Press Space to play or pause.",
+    "noContent": "No readable script content was found."
+  },
+  "paragraph": {},
+  "section": {},
+  "details": {
+    "heading": "Script details and export",
+    "downloadPdf": "Download PDF",
+    "copyScript": "Copy full script",
+    "copied": "Copied",
+    "createThumbnail": "Create thumbnail",
+    "suggestedTitles": "Suggested titles",
+    "regenerateTitlesAria": "Regenerate suggested titles",
+    "plan": "Plan",
+    "hook": "Hook:",
+    "payoff": "Payoff",
+    "cta": "Primary CTA",
+    "studioCheck": "Studio check"
+  },
+  "emptyState": {
+    "title": "Create Your Script",
+    "description": "Fill in the details on the left panel and let AI generate a professional script for your video."
+  },
+  "errors": {
+    "quota": "Gemini usage is temporarily limited. Wait for the provider window to reset, then retry.",
+    "generationFailed": "Script generation failed",
+    "titleRegenerationFailed": "Title regeneration failed",
+    "sectionRegenerationFailed": "Could not regenerate {{section}}",
+    "paragraphRewriteFailed": "Could not rewrite paragraph"
+  },
+  "toasts": {
+    "ideaLoaded": {
+      "title": "Idea Loaded",
+      "description": "\"{{title}}\" has been loaded with research insights. Ready to generate your script!"
+    },
+    "scriptGenerated": {
+      "title": "Script Generated",
+      "description": "Your {{format}} script is ready!"
+    },
+    "titlesRegenerated": {
+      "title": "Titles Regenerated",
+      "description": "New title suggestions are ready!"
+    },
+    "paragraphUpdated": {},
+    "sectionRegenerated": {
+      "title": "Section Regenerated",
+      "description": "{{section}} section has been updated!"
+    },
+    "paragraphRewritten": {
+      "title": "Paragraph Rewritten",
+      "description": "The paragraph has been updated!"
+    },
+    "copied": {
+      "title": "Copied to clipboard",
+      "description": "Script has been copied to your clipboard."
+    },
+    "pdfDownloaded": {
+      "title": "PDF Downloaded",
+      "description": "Your script has been saved as a PDF."
+    }
+  }
+}

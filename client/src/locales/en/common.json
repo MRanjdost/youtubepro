@@ -1,0 +1,77 @@
+{
+  "app": {
+    "name": "YouTube Pro",
+    "tagline": "AI Research & Packaging Suite"
+  },
+  "na": "N/A",
+  "layout": {
+    "skipToContent": "Skip to content",
+    "toggleSidebar": "Toggle Sidebar"
+  },
+  "nav": {
+    "tools": "Tools",
+    "recentWorkflows": "Recent workflows",
+    "research": "Research",
+    "ideas": "AI Insights",
+    "script": "Script Writer",
+    "thumbnail": "Thumbnail Creator",
+    "settings": "Settings",
+    "workflows": "Workflows",
+    "navigation": "Navigation"
+  },
+  "workflow": {
+    "untitled": "Untitled workflow",
+    "status": {
+      "current": "current",
+      "upcoming": "upcoming",
+      "completed": "completed"
+    }
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "select": "Language",
+    "en": "English",
+    "fa": "فارسی"
+  },
+  "time": {
+    "justNow": "just now",
+    "secondsAgo": "{{count}} seconds ago",
+    "minutesAgo": "{{count}} minutes ago",
+    "hoursAgo": "{{count}} hours ago",
+    "daysAgo": "{{count}} days ago"
+  },
+  "dialog": {
+    "renameTitle": "Rename workflow",
+    "renameDesc": "Give this project a short name that will be easy to recognize later.",
+    "renameMaxChars": "Maximum 48 characters",
+    "renameSave": "Save name",
+    "deleteTitle": "Delete \"{{title}}\"?",
+    "deleteDesc": "This removes the locally saved research, ideas, script, and thumbnail for this workflow. This action cannot be undone.",
+    "deleteConfirm": "Delete workflow"
+  },
+  "sidebar": {
+    "emptyHistory": "Your recent research, scripts, and thumbnails will appear here.",
+    "renameEmpty": "Enter a workflow name.",
+    "renameFailed": "The workflow could not be renamed.",
+    "progressAria": "Workflow progress",
+    "actionsFor": "Actions for {{title}}"
+  },
+  "notFound": {
+    "badge": "Error 404",
+    "title": "404 Page Not Found",
+    "description": "Did you forget to add the page to the router?",
+    "backToHome": "Return to Research"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "reload": "Reload"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "rename": "Rename"
+  }
+}

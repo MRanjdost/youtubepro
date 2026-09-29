@@ -1,0 +1,109 @@
+{
+  "generic": {
+    "title": "An unexpected error occurred",
+    "description": "Please try again. If the issue persists, check your network and settings.",
+    "network": "Network connection failed. Check your internet connection or proxy settings.",
+    "timeout": "The request timed out. Please try again.",
+    "unauthorized": "Authentication failed. Check your API keys in Settings."
+  },
+  "youtube": {
+    "YOUTUBE_API_KEY_REQUIRED": {
+      "title": "YouTube API Key Required",
+      "suggestion": "Configure a valid YouTube Data API key in Settings."
+    },
+    "YOUTUBE_API_KEY_INVALID": {
+      "title": "YouTube API Key Invalid",
+      "suggestion": "Check that the YouTube Data API key is correct and enabled in Google Cloud Console."
+    },
+    "YOUTUBE_QUOTA_EXCEEDED": {
+      "title": "YouTube API Quota Exceeded",
+      "suggestion": "Your daily YouTube Data API quota has been exhausted. Wait for quota reset or use another key."
+    },
+    "YOUTUBE_NETWORK": {
+      "title": "YouTube Connection Failed",
+      "suggestion": "Unable to reach YouTube API. Check your internet connection, proxy settings, or firewall."
+    },
+    "YOUTUBE_REQUEST_REJECTED": {
+      "title": "YouTube Request Rejected",
+      "suggestion": "YouTube rejected the search query or parameters. Review filters and try again."
+    }
+  },
+  "gemini": {
+    "GEMINI_API_KEY_REQUIRED": {
+      "title": "Gemini API Key Required",
+      "suggestion": "Configure your Gemini API key in Settings to use AI features."
+    },
+    "GEMINI_API_KEY_INVALID": {
+      "title": "Gemini API Key Invalid",
+      "suggestion": "Check that your Gemini API key is valid in Google AI Studio."
+    },
+    "GEMINI_QUOTA_EXCEEDED": {
+      "title": "Gemini Quota Exceeded",
+      "suggestion": "AI rate limit reached. Please wait a moment before trying again."
+    },
+    "GEMINI_RESEARCH_INSIGHTS_PROVIDER_FAILURE": {
+      "title": "Research Insights Failed",
+      "suggestion": "Gemini could not complete the research analysis. Retry or check your API key."
+    },
+    "GEMINI_RESEARCH_INSIGHTS_INVALID": {
+      "title": "Invalid Research Insights",
+      "suggestion": "Gemini returned an unparseable response. Retry to request a fresh generation."
+    },
+    "GEMINI_IDEA_GENERATION_PROVIDER_FAILURE": {
+      "title": "Idea Generation Failed",
+      "suggestion": "Gemini failed to generate grounded ideas. Please retry."
+    },
+    "GEMINI_IDEA_GENERATION_INVALID": {
+      "title": "Invalid Grounded Ideas",
+      "suggestion": "Generated ideas did not match evidence constraints. Please retry."
+    },
+    "GEMINI_SCRIPT_GENERATION_PROVIDER_FAILURE": {
+      "title": "Script Generation Failed",
+      "suggestion": "Gemini could not generate the script. Check connection or retry."
+    },
+    "GEMINI_SCRIPT_GENERATION_INVALID": {
+      "title": "Invalid Script Response",
+      "suggestion": "The generated script format was invalid. Please retry."
+    },
+    "GEMINI_IMAGE_GENERATION_PROVIDER_FAILURE": {
+      "title": "Thumbnail Generation Failed",
+      "suggestion": "Gemini image model failed to generate thumbnail. Check your image model settings."
+    }
+  },
+  "custom": {
+    "CUSTOM_TEXT_RESEARCH_INSIGHTS_PROVIDER_FAILURE": {
+      "title": "Custom Provider Insights Failed",
+      "suggestion": "The custom text AI provider failed. Check Base URL, API key, and model status."
+    },
+    "CUSTOM_TEXT_RESEARCH_INSIGHTS_INVALID": {
+      "title": "Custom Provider Response Invalid",
+      "suggestion": "Custom provider returned an unparseable response for research insights."
+    },
+    "CUSTOM_TEXT_IDEA_GENERATION_PROVIDER_FAILURE": {
+      "title": "Custom Provider Idea Generation Failed",
+      "suggestion": "Custom text provider failed to generate ideas. Verify endpoint availability."
+    },
+    "CUSTOM_TEXT_IDEA_GENERATION_INVALID": {
+      "title": "Custom Provider Ideas Invalid",
+      "suggestion": "Custom provider ideas failed evidence schema validation."
+    },
+    "CUSTOM_TEXT_SCRIPT_GENERATION_PROVIDER_FAILURE": {
+      "title": "Custom Provider Script Generation Failed",
+      "suggestion": "Custom text provider failed during script generation."
+    },
+    "CUSTOM_TEXT_SCRIPT_GENERATION_INVALID": {
+      "title": "Custom Provider Script Invalid",
+      "suggestion": "Custom provider script output failed schema validation."
+    },
+    "CUSTOM_IMAGE_GENERATION_PROVIDER_FAILURE": {
+      "title": "Custom Image Provider Failed",
+      "suggestion": "Custom image generation failed or the provider is currently unsupported."
+    }
+  },
+  "validation": {
+    "THUMBNAIL_REQUEST_INVALID": {
+      "title": "Invalid Thumbnail Request",
+      "suggestion": "Review thumbnail settings and reference image formats, then try again."
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "app": {
+    "name": "یوتیوب پرو",
+    "tagline": "ابزار تحقیق و بسته‌بندی هوش مصنوعی"
+  },
+  "na": "N/A",
+  "layout": {
+    "skipToContent": "پرش به محتوا",
+    "toggleSidebar": "بستن/بازکردن نوار کناری"
+  },
+  "nav": {
+    "tools": "ابزارها",
+    "recentWorkflows": "پروژه‌های اخیر",
+    "research": "تحقیق",
+    "ideas": "بینش‌های هوش مصنوعی",
+    "script": "نویسنده فیلم‌نامه",
+    "thumbnail": "سازنده تصویر بند",
+    "settings": "تنظیمات",
+    "workflows": "گردش‌های کاری",
+    "navigation": "ناوبری"
+  },
+  "workflow": {
+    "untitled": "پروژه بدون عنوان",
+    "status": {
+      "current": "در حال اجرا",
+      "upcoming": "بعدی",
+      "completed": "کامل‌شده"
+    }
+  },
+  "theme": {
+    "toggle": "تغییر تم"
+  },
+  "language": {
+    "select": "زبان",
+    "en": "English",
+    "fa": "فارسی"
+  },
+  "time": {
+    "justNow": "همین الان",
+    "secondsAgo": "{{count}} ثانیه قبل",
+    "minutesAgo": "{{count}} دقیقه قبل",
+    "hoursAgo": "{{count}} ساعت قبل",
+    "daysAgo": "{{count}} روز قبل"
+  },
+  "dialog": {
+    "renameTitle": "تغییر نام گردش کار",
+    "renameDesc": "به این پروژه نام کوتاهی بدهید که بعداً به راحتی قابل تشخیص باشد.",
+    "renameMaxChars": "حداکثر ۴۸ کاراکتر",
+    "renameSave": "ذخیره نام",
+    "deleteTitle": "حذف \"{{title}}\"؟",
+    "deleteDesc": "این کار تحقیقات، ایده‌ها، فیلم‌نامه و تصویر بند ذخیره‌شده به صورت محلی را حذف می‌کند. این کار قابل بازگشت نیست.",
+    "deleteConfirm": "حذف گردش کار"
+  },
+  "sidebar": {
+    "emptyHistory": "تحقیقات، فیلم‌نامه‌ها و تصاویر بند اخیر شما در اینجا نمایش داده می‌شوند.",
+    "renameEmpty": "یک نام برای گردش کار وارد کنید.",
+    "renameFailed": "تغییر نام گردش کار ممکن نشد.",
+    "progressAria": "پیشرفت گردش کار",
+    "actionsFor": "اقدامات برای {{title}}"
+  },
+  "notFound": {
+    "badge": "خطای ۴۰۴",
+    "title": "۴۰۴ صفحه مورد نظر یافت نشد",
+    "description": "آیا فراموش کرده‌اید این صفحه را به مسیریاب اضافه کنید؟",
+    "backToHome": "بازگشت به تحقیق"
+  },
+  "errorBoundary": {
+    "title": "مشکلی پیش آمد",
+    "reload": "بارگذاری مجدد"
+  },
+  "actions": {
+    "cancel": "لغو",
+    "delete": "حذف",
+    "loading": "در حال بارگذاری...",
+    "rename": "تغییر نام"
+  }
+}

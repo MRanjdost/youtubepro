@@ -1,0 +1,190 @@
+<p align="center">
+  <img src="client/public/youtube-pro.svg" width="88" alt="YouTube Pro logo">
+</p>
+
+<h1 align="center">YouTube Pro</h1>
+
+<p align="center">
+  [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
+  [![Node](https://img.shields.io/badge/Node-%3E%3D20-brightgreen.svg)](https://nodejs.org/)
+</p>
+
+<p align="center">
+  Research, understand, write, and package a YouTube video in one local-first workflow.
+</p>
+
+> سامانه پژوهش، ایده‌پردازی، فیلمنامه‌نویسی و ساخت تامبنیل هوشمند برای یوتیوبرها با پشتیبانی کامل از زبان فارسی و انگلیسی.
+>
+> Evidence-grounded research, ideation, script writing, and thumbnail generation for YouTube creators, with full Persian and English support.
+
+YouTube Pro is an evidence-grounded workspace for YouTube research, idea selection, script writing, and thumbnail creation. It combines public YouTube Data API v3 records with Gemini analysis while keeping API keys on the server.
+
+YouTube Pro is an independent project. It is not affiliated with, endorsed by, or sponsored by YouTube or Google. YouTube and Google product names are trademarks of their respective owners.
+
+## Product tour
+
+### Research analytics
+
+Search a topic, inspect the returned public-data snapshot, compare momentum and publication patterns, review data coverage, and continue into AI-assisted insights and ideas.
+
+![YouTube Pro research analytics with video performance, momentum, duration, and publication graphs](docs/images/research-analytics.png)
+
+### Source videos
+
+Review every video included in the active public-data snapshot, with thumbnails, channel information, views, publication timing, likes, and comments visible in one grid.
+
+![YouTube Pro source-video grid showing every video used in the research snapshot](docs/images/research-source-videos.png)
+
+### AI Insights
+
+Turn the active snapshot into a scan-first research brief with audience questions, opportunity themes, recommended moves, and a clear separation between observed evidence, inference, and metrics that require YouTube Studio.
+
+![YouTube Pro AI Insights with visual summaries, evidence balance, and an expandable evidence ledger](docs/images/research-ai-insights.png)
+
+### Script teleprompter
+
+Turn a selected idea into an editable script, then read it in a focused teleprompter with pace, size, cue, undo, and playback controls.
+
+![YouTube Pro teleprompter with playback and reading controls](docs/images/script-teleprompter.png)
+
+### Thumbnail Creator
+
+Describe the outcome once, add optional references or advanced controls, generate a readable 16:9 thumbnail, and create variations from the same workflow.
+
+![YouTube Pro Thumbnail Creator with a generated thumbnail preview and minimal creation controls](docs/images/thumbnail-creator.png)
+
+These screenshots come from a live local development build using public YouTube metadata. They are not generated interface mockups.
+
+## Workflow
+
+The product follows one continuous workflow:
+
+1. **Research**: Search up to 50 public YouTube videos, review the overview, analytics, coverage, and every returned video.
+2. **AI Insights**: Gemini analyzes the exact active research snapshot. Claims retain their snapshot identity and source video IDs, or are explicitly labeled as aggregate inference or as requiring YouTube Studio.
+3. **Grounded Ideas**: Ideas generate automatically after valid Insights. Select one idea, then explicitly proceed to Script Writer.
+4. **Script Writer**: Generate and edit a script from the selected idea package and its evidence. Section and paragraph regeneration use the same bounded evidence context.
+5. **Thumbnail Creator**: Use the selected promise and thumbnail concept, outcome-oriented presets, editable controls, and up to three permitted references.
+
+There is no standalone Ideas screen. The legacy `/ideas` path redirects to the Ideas section inside Research.
+
+Each press of **New Workflow** creates a separate local project. The sidebar keeps the eight most recent workflows in browser IndexedDB, lets the user rename or delete them, and reopens the last active Research, Script, or Thumbnail step. Research snapshots, generated ideas, editable scripts, thumbnail briefs, and generated thumbnail results are restored together. Uploaded reference images are intentionally not retained, so permission and file selection are fresh for every later generation.
+
+## Requirements
+
+- Node.js 20.19 or newer. Node.js 22.12 or newer is also supported by the current build toolchain.
+- A YouTube Data API v3 key for Research.
+- A Gemini API key for Insights, Ideas, scripts, and thumbnails.
+
+Copy the example configuration and fill it locally:
+
+```bash
+cp .env.example .env
+npm install
+npm run dev
+```
+
+The server listens on `127.0.0.1:5433` by default. Open `http://127.0.0.1:5433`.
+
+You can instead start without keys and enter them in **Settings**. Settings writes replacements to the ignored `.env` file with owner-only permissions. Saved values are never returned to the browser. Settings accepts direct loopback, same-origin requests only and rejects normal forwarded or reverse-proxy requests.
+
+## Configuration
+
+| Variable | Purpose | Default |
+| --- | --- | --- |
+| `YOUTUBE_API_KEY` | YouTube Data API v3 search and enrichment | Required for Research |
+| `GEMINI_API_KEY` | Gemini text and image generation | Required for AI features |
+| `GEMINI_TEXT_MODEL` | Research, Ideas, Script, and regeneration model | `gemini-3.6-flash` |
+| `GEMINI_IMAGE_MODEL` | Thumbnail generation model | `gemini-3.1-flash-image` |
+| `PORT` | Local HTTP port | `5433` |
+| `HOST` | Bind address | `127.0.0.1` |
+| `CUSTOM_TEXT_*` | Optional OpenAI-compatible text provider (separate from image) | none |
+| `CUSTOM_IMAGE_*` | Optional image provider: `gemini`, `openai-compatible`, or `pollinations` | none |
+| `HTTPS_PROXY` / `HTTP_PROXY` | Optional outbound proxy for Google API traffic | none |
+| `SETTINGS_ENV_PATH` | Override the settings file location | `./.env` |
+| `YOUTUBE_TIMEOUT_MS` | Per-request YouTube timeout | `30000` |
+| `YOUTUBE_TOTAL_TIMEOUT_MS` | Wall-clock budget for a full research run | `60000` |
+
+The Settings page exposes the server allowlist and its current descriptions. Models are not hardcoded by the client. Changing the allowlist in `server/gemini-models.ts` changes the available Settings options.
+
+## Image provider options
+
+### Free (no API key)
+
+- **Pollinations** — set `CUSTOM_IMAGE_PROVIDER=pollinations`. Uses the free public Flux and Turbo endpoints through `server/providers/pollinations-provider.ts`. No key, no billing, and the server falls back between Flux and Turbo automatically.
+
+### Bring your own key
+
+- **Google Nano Banana Pro** (`gemini-3-pro-image`) — studio-grade thumbnail quality. Requires billing on Google AI Studio.
+- **Together AI** — `CUSTOM_IMAGE_PROVIDER=openai-compatible`, `CUSTOM_IMAGE_BASE_URL=https://api.together.xyz/v1`, `CUSTOM_IMAGE_MODEL=black-forest-labs/FLUX.1.1-pro`.
+- **SiliconFlow** — `CUSTOM_IMAGE_BASE_URL=https://api.siliconflow.cn/v1`, `CUSTOM_IMAGE_MODEL=black-forest-labs/FLUX.1-dev`.
+
+Text generation accepts any OpenAI-compatible endpoint through `CUSTOM_TEXT_PROVIDER`, including OpenRouter.
+
+## Data and request limits
+
+- Research query: 1 to 200 characters.
+- Research sample: 1 to 50 videos per search request. YouTube's overall result count is approximate and is labeled separately from the returned sample.
+- Research enrichment: public video statistics, duration, captions, tags, language, topic categories, selected status fields, live-stream details, and public channel metadata when available. Missing or private public fields remain unavailable, never zero-filled.
+- AI evidence input: exactly the active ordered snapshot, at most 50 videos, its deterministic aggregate analytics, enrichment coverage, warnings, filters, query, retrieval time, and snapshot ID.
+- Script input: topic up to 500 characters, custom tone traits up to 300, notes up to 5,000, script or section content up to 80,000 where applicable.
+- Thumbnail references: PNG or JPEG, 128 to 4096 pixels, at most 5 MB after preparation per image, 12 MB decoded total, and no more than three references. The browser also rejects source files over 10 MB before preparation.
+- Global JSON body: 18 MB, needed for the bounded base64 thumbnail references. URL-encoded input is limited to 64 KB and 100 parameters.
+- Billable YouTube and Gemini routes: 10 requests per client address per 60 seconds in this single-process local server.
+
+## Privacy and access model
+
+- There is no login screen, initial password, Thumbnail unlock, or Pro Script Studio gate.
+- API keys stay server-side and `.env` is ignored.
+- Recent workflow history stays in the current browser profile. It is not sent to a separate history service and never contains API keys.
+- Request and response bodies are not logged.
+- The application binds to loopback unless `HOST` is explicitly changed.
+- Do not expose the server directly to the internet. If remote access is required, add authentication and rate limiting at a trusted gateway, and disable or separately protect local Settings.
+- The in-memory rate limiter is per process. It is suitable for this local-first default, not a distributed public deployment.
+
+Gemini image outputs include Google's invisible SynthID provenance. The application does not add a visible watermark and does not claim SynthID can be disabled.
+
+## Commands
+
+```bash
+npm run dev          # development server (Vite middleware on the Express app)
+npm test             # contract and provider-behavior tests (script/test.ts)
+npm test -- --watch  # watch mode
+npm run check        # TypeScript check (tsc)
+npm run typecheck    # alias for npm run check
+npm run verify-i18n  # locale key coverage check (en/fa parity)
+npm run build        # production client (Vite) and server (esbuild) build
+npm start            # run the production build
+npm run clean        # remove the dist/ directory
+```
+
+Continuous integration runs the full test suite, TypeScript check, locale coverage check, and production build on every pull request and push to `main`.
+
+## Technology
+
+- React 18, TypeScript, Vite, Tailwind CSS, and shadcn/ui (26 components)
+- Express 5 server, bundled with esbuild to `dist/index.cjs`
+- Modular provider abstraction in `server/providers/` supporting Google Gemini (`@google/genai`), any OpenAI-compatible text or image endpoint, and Pollinations for free thumbnail generation
+- YouTube Data API v3
+- react-i18next with 8 namespaces across English and Persian (fa), including RTL layout and the Vazirmatn font for Persian PDF export
+- No server-side runtime database, session store, Passport authentication, or Replit-managed AI proxy; client persistence is browser IndexedDB
+
+## Internationalization
+
+The interface ships in English (ltr) and Persian (fa, rtl) with eight bilingual namespaces: `common`, `errors`, `ideas`, `research`, `script`, `settings`, `thumbnail`, and `controller-guide`. Numbers, percents, and dates localize through `client/src/lib/formatter.ts` (Gregorian for en, Jalali for fa). `npm run verify-i18n` enforces key parity between the two languages and is part of CI.
+
+## Quotas and costs
+
+YouTube search is quota-expensive compared with video and channel enrichment. Gemini limits and pricing vary by model and account. Check the current official documentation before changing models or making the server remotely accessible:
+
+- [YouTube Data API quota costs](https://developers.google.com/youtube/v3/determine_quota_cost)
+- [Gemini pricing](https://ai.google.dev/pricing)
+- [Gemini image generation and SynthID](https://ai.google.dev/gemini-api/docs/image-generation)
+
+## License
+
+YouTube Pro is open source under the [Apache License 2.0](LICENSE).
+
+## Contributing and security
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the local quality gate. Report security issues privately according to [.github/SECURITY.md](.github/SECURITY.md), never in a public issue.

@@ -1,0 +1,208 @@
+{
+  "title": "Thumbnail Creator",
+  "subtitle": "Describe the thumbnail once. The creator applies the selected research promise and YouTube readability rules.",
+  "form": {
+    "topicLabel": "Video topic or title",
+    "topicPlaceholder": "What is the video about?",
+    "presetLabel": "Starting point",
+    "presetCustom": "Use my brief",
+    "mainTextLabel": "Words on the thumbnail",
+    "mainTextPlaceholder": "Optional, 2 to 5 words",
+    "descriptionLabel": "Describe the thumbnail you want",
+    "descriptionPlaceholder": "Example: A close-up of a creator looking surprised at a clean analytics dashboard, strong contrast, subject on the right, room for short text on the left.",
+    "descriptionHint": "Subject, action, setting, and truthful outcome",
+    "referencesTitle": "Reference images",
+    "referencesDescription": "Optional, up to three permitted PNG or JPEG images.",
+    "dragImages": "Drag images here",
+    "chooseFiles": "or choose files",
+    "preparingImages": "Preparing images",
+    "rightsLabel": "I have permission to use every uploaded reference image.",
+    "advancedTrigger": "Advanced controls",
+    "subTextLabel": "Secondary text",
+    "subTextPlaceholder": "Optional supporting line",
+    "autoBlendLabel": "Blend references into one scene",
+    "autoBlendDescription": "Off treats them as direction only.",
+    "variationPlaceholder": "What should change in the next version?",
+    "variationTrigger": "Create a variation",
+    "variationGenerate": "Generate variation",
+    "topicDescription": "What is your video about? Let AI craft the visual concept.",
+    "providerLabel": "Image generator",
+    "providerConfigured": "Server model (from Settings)",
+    "providerPuter": "Puter (Free AI Image)",
+    "providerPollinations": "Pollinations (Free, No Key)"
+  },
+  "modelStatus": {
+    "checkButton": "Check image model",
+    "loadingAria": "Loading configured image model"
+  },
+  "puter": {
+    "fallbackToPollinations": "Puter is unavailable. Generating with Pollinations instead...",
+    "generationFailed": "Puter could not generate the image",
+    "generationFailedSuggestion": "Free image generation with Puter failed:"
+  },
+  "pollinations": {
+    "generationFailed": "Pollinations could not generate the image",
+    "generationFailedSuggestion": "Free image generation failed:",
+    "unreachable": "Pollinations is unreachable from your network",
+    "unreachableSuggestion": "Your browser cannot reach image.pollinations.ai. This may be due to network restrictions. Try selecting 'Server model (from Settings)' as the image generator instead.",
+    "timeout": "Pollinations request timed out",
+    "timeoutSuggestion": "The free image service took too long to respond. Try again or switch to the server model."
+  },
+  "contextBanner": {
+    "loaded": "Research idea loaded",
+    "promise": "Promise:"
+  },
+  "formCard": {
+    "title": "Create a thumbnail",
+    "description": "Start with a clear promise and one visual idea. References and detailed controls are optional."
+  },
+  "preview": {
+    "title": "Preview",
+    "loading": "Generating one 16:9 image with the configured model. This can take a moment.",
+    "alt": "Generated YouTube thumbnail",
+    "download": "Download",
+    "newVersion": "New version",
+    "downloaded": "Downloaded as",
+    "generatedWith": "Generated with",
+    "defaultModel": "the configured image model",
+    "empty": {
+      "title": "Your thumbnail will appear here",
+      "description": "Add a topic and a short visual brief, then create."
+    }
+  },
+  "actions": {
+    "createThumbnail": "Create thumbnail",
+    "creatingThumbnail": "Creating thumbnail"
+  },
+  "advanced": {
+    "visualStyle": "Visual style",
+    "composition": "Composition",
+    "cameraAngle": "Camera angle",
+    "lighting": "Lighting",
+    "colorScheme": "Color scheme",
+    "textPosition": "Text position"
+  },
+  "reference": {
+    "imageAlt": "Reference {{number}}: {{name}}",
+    "roleAria": "Role for reference {{number}}",
+    "removeAria": "Remove reference {{number}}: {{name}}"
+  },
+  "presets": {
+    "tutorial": "Tutorial or demo",
+    "comparison": "Comparison or versus",
+    "result": "Result reveal",
+    "case-study": "Case study",
+    "news": "News or update",
+    "list": "List or ranking",
+    "review": "Product or tool review"
+  },
+  "options": {
+    "bold_dramatic": "Bold and dramatic",
+    "clean_minimal": "Clean and minimal",
+    "gaming": "Gaming",
+    "vlog_lifestyle": "Vlog and lifestyle",
+    "educational": "Educational",
+    "cinematic": "Cinematic",
+    "tech_modern": "Tech and modern",
+    "lifestyle_wellness": "Lifestyle and wellness",
+    "centered": "Centered",
+    "rule_of_thirds": "Rule of thirds",
+    "close_up": "Close-up",
+    "wide_shot": "Wide shot",
+    "split_screen": "Split screen",
+    "diagonal": "Diagonal",
+    "eye_level": "Eye level",
+    "low_angle": "Low angle",
+    "high_angle": "High angle",
+    "dutch_angle": "Dutch angle",
+    "overhead": "Overhead",
+    "three_quarter": "Three-quarter",
+    "natural": "Natural",
+    "dramatic": "Dramatic",
+    "golden_hour": "Golden hour",
+    "studio": "Studio",
+    "neon_rgb": "Neon and RGB",
+    "backlit": "Backlit",
+    "soft_diffused": "Soft and diffused",
+    "vibrant": "Vibrant",
+    "muted_elegant": "Muted and elegant",
+    "warm": "Warm tones",
+    "cool": "Cool tones",
+    "monochrome": "Monochrome",
+    "complementary": "Complementary",
+    "brand_colors": "Brand colors",
+    "left": "Left",
+    "right": "Right",
+    "center": "Center",
+    "top": "Top",
+    "bottom": "Bottom",
+    "no_text_space": "No text space",
+    "subject_person": "Subject or person",
+    "style_direction": "Style direction",
+    "background": "Background",
+    "composition": "Composition"
+  },
+  "styleOptions": {
+    "bold": "Bold and dramatic",
+    "minimal": "Clean and minimal",
+    "gaming": "Gaming",
+    "vlog": "Vlog and lifestyle",
+    "tutorial": "Educational",
+    "cinematic": "Cinematic",
+    "tech": "Tech and modern",
+    "lifestyle": "Lifestyle and wellness"
+  },
+  "compositionOptions": {
+    "centered": "Centered",
+    "rule-of-thirds": "Rule of thirds",
+    "close-up": "Close-up",
+    "wide-shot": "Wide shot",
+    "split-screen": "Split screen",
+    "diagonal": "Diagonal"
+  },
+  "cameraAngleOptions": {
+    "eye-level": "Eye level",
+    "low-angle": "Low angle",
+    "high-angle": "High angle",
+    "dutch-angle": "Dutch angle",
+    "overhead": "Overhead",
+    "three-quarter": "Three-quarter"
+  },
+  "lightingOptions": {
+    "natural": "Natural",
+    "dramatic": "Dramatic",
+    "golden-hour": "Golden hour",
+    "studio": "Studio",
+    "neon": "Neon and RGB",
+    "backlit": "Backlit",
+    "soft": "Soft and diffused"
+  },
+  "colorSchemeOptions": {
+    "vibrant": "Vibrant",
+    "muted": "Muted and elegant",
+    "warm": "Warm tones",
+    "cool": "Cool tones",
+    "monochrome": "Monochrome",
+    "complementary": "Complementary",
+    "brand-colors": "Brand colors"
+  },
+  "textPositionOptions": {
+    "left": "Left",
+    "right": "Right",
+    "center": "Center",
+    "top": "Top",
+    "bottom": "Bottom",
+    "none": "No text space"
+  },
+  "imageRoleOptions": {
+    "subject": "Subject or person",
+    "style": "Style direction",
+    "background": "Background",
+    "composition": "Composition"
+  },
+  "errors": {
+    "retry": "Retry",
+    "retryWithPuter": "Retry with Pollinations (Free / No Key)",
+    "openSettings": "Open Settings"
+  }
+}

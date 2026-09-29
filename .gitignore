@@ -1,0 +1,52 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.DS_Store
+.directory
+vite.config.ts.*
+*.tar.gz
+
+# IDE and editor directories
+.vscode/
+.idea/
+
+# OS junk
+Thumbs.db
+desktop.ini
+
+# Test coverage and tooling output
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Logs and temporary files
+*.log
+*.tmp
+orphans-to-delete.txt
+
+# Local workspace and retired platform metadata
+.replit
+CLAUDE.md
+design_guidelines.md
+attached_assets/
+
+# WHY: Internal maintainer artifacts. These are session handoffs, generated
+# architecture maps, and review/audit reports that go stale on every commit and
+# describe retired implementation details. They stay useful on a maintainer's
+# machine but must not ship in a public repository.
+HANDOFF.md
+PORTING.md
+PROJECT_MAP.md
+REPORT.md
+FIX-LOG.md
+
+# WHY: Local agent workspaces and dead git worktrees. These are excluded by
+# machine-local config only (.git/info/exclude and a per-user global ignore
+# file), neither of which travels with the repository. Without these rules a
+# different clone, or the same machine after that config is reset, would stage
+# a full duplicate checkout plus absolute local paths and permission grants.
+.claude/
+.kilo/
+.test-env-tmp/
